@@ -1,0 +1,56 @@
+curl --location --request POST 'http://127.0.0.1:80/fillup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "stores": [
+        {
+            "name": "store 1",
+            "products": [
+                {
+                    "sdk": 992994,
+                    "quantity": 10
+                }
+            ]
+        },
+        {
+            "name": "store 2",
+            "products": [
+                {
+                    "sdk": 993991,
+                    "quantity": 10
+                },
+                {
+                    "sdk": 992994,
+                    "quantity": 10
+                }
+            ]
+        },
+        {
+            "name": "store 3",
+            "products": [
+                {
+                    "sdk": 992996,
+                    "quantity": 10
+                }
+            ]
+        }
+    ],
+    "products": [
+        {
+            "sdk": 992994,
+            "sku": "99999199811"
+        },
+        {
+            "sdk": 993991,
+            "sku": "99399199991"
+        },
+        {
+            "sdk": 992996,
+            "sku": "99999191211"
+        }
+    ],
+    "priorityList": [
+        "store 1",
+        "store 2",
+        "store 3"
+    ]
+}'

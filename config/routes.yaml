@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+fill_up:
+  path: /fillup
+  methods: [POST]
+  controller: App\Controller\AdminController::addStoresAndProducts
+clear_all:
+  path: /clear
+  methods: [POST]
+  controller: App\Controller\AdminController::clearAll
+
+place_order:
+  path: /order/place
+  methods: [POST]
+  controller: App\Controller\OrderController::placeOrder

@@ -1,0 +1,16 @@
+curl --location --request POST 'http://127.0.0.1:80/order/place' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "sdk": 992994,
+        "sku": "99999199811"
+    },
+    {
+        "sdk": 993991,
+        "sku": "99399199991"
+    },
+    {
+        "sdk": 992996,
+        "sku": "99999191211"
+    }
+]'
